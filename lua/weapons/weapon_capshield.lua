@@ -63,10 +63,11 @@ function SWEP:throw_attack (model_file)
 	--self:EmitSound(ShootSound)
 	--elf.BaseClass.ShootEffects(self)
 	if (!SERVER) then return end
-	local ent = ents.Create("prop_physics")
-	ent:SetModel(model_file)
+	self:EmitSound("weapons/slam/throw.wav")
+	local ent = ents.Create("sent_shield")
 	ent:SetPos(self.Owner:EyePos() + (self.Owner:GetAimVector() * 16))
 	ent:SetAngles(self.Owner:EyeAngles() - Angle(0,0,180))
+	ent:SetOwner(self:GetOwner())
 	ent:Spawn()
 	local phys = ent:GetPhysicsObject()
 	if !(phys && IsValid(phys)) then ent:Remove() return end
