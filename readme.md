@@ -7,3 +7,6 @@ Some sort of logical primary attack or shield mode. I want for the shield to ret
 
 ## Source material
 https://steamcommunity.com/sharedfiles/filedetails/?id=773588057&searchtext=captain+america
+
+## Video showcase
+[![Captain America Shield SWEP: Work in progress](http://img.youtube.com/vi/AmW8OpPFeUo/0.jpg)](http://www.youtube.com/watch?v=AmW8OpPFeUo "Captain America Shield SWEP: Work in progress")
